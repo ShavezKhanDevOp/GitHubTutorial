@@ -30,7 +30,7 @@
 
 9) check the logs:
     git log
-    git log -p <number of changes> (i.e git log -p 1)
+    git log -p -<number of changes> (i.e git log -p 1)
 
 10) compare the working tree:
     git diff  (working tree with staging area)
