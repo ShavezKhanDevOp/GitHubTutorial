@@ -22,6 +22,19 @@
     git commit -m "message"
 
 7) create the files:
-    touch fileName with extensions.
+    touch <fileName with extensions.>
 
+8) checkout the old commits
+    git checkout <fileName> (recover the single file)
+    git checkout -f (recover the all the file)
 
+9) check the logs:
+    git log
+    git log -p <number of changes> (i.e git log -p 1)
+
+10) compare the working tree:
+    git diff  (working tree with staging area)
+    git diff --staged (staged tree with last commit)
+
+11) Skip stage are adn commit code directly 
+    git commit -a -m "Message"
