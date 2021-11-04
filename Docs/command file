@@ -11,6 +11,7 @@
 
 4) check the status:
     git status
+    git status -s (give short status)
 
 5) add the files in staging area:
     git add <file-name> (for single file to add in stage)
