@@ -1,0 +1,27 @@
+1) Configer the git by using User name:
+    git config --global user.name <name>
+    git config --global user.email <email>
+
+2) check config is completed or not using:
+    git config --global user.name
+    git config --global user.email
+
+3) initialize the git:
+    git init
+
+4) check the status:
+    git status
+
+5) add the files in staging area:
+    git add <file-name> (for single file to add in stage)
+    git add -A  (Add only newly added files to stage area)
+    git add . (for all file's to add in stage)
+
+6) Commit the changes
+    git commit
+    git commit -m "message"
+
+7) create the files:
+    touch fileName with extensions.
+
+
