@@ -64,3 +64,13 @@
 
 17) merge the new branch in master:
     git merge <branch_name>
+
+working with remote repositories.
+18) Add remote rempository
+    git remote add origin https://github.com/{UserName}/{RepositoryName}.git
+
+19) check the remote details
+    git remote
+
+20) push the branch to remote branch
+    git push origin {branchName}
