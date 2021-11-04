@@ -43,3 +43,10 @@
 12) remove the files:
     git rm <file_name> (remove the file from stage as well as directory)
     git rm --cached <file_name> (remove the file from stage only)
+
+13) add git ignore file and add file/folder name which we have to ignore.
+    touch .gitignore
+        format to add file name in gitignore
+            1) myLogs.log --> this get ignore from entire project
+            2) /myLogs.log --> get ignored from directory where .gitignore file is present
+            3) *.log --> ignore all file has extension log
