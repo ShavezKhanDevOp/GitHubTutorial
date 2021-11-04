@@ -38,3 +38,7 @@
 
 11) Skip stage are adn commit code directly 
     git commit -a -m "Message"
+
+12) remove the files:
+    git rm <file_name> (remove the file from stage as well as directory)
+    git rm --cached <file_name> (remove the file from stage only)
