@@ -60,3 +60,6 @@
 
 16) point to new branch 
     git checkout <branch_name>
+
+17) merge the new branch in master:
+    git merge <branch_name>
