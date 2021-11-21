@@ -1,0 +1,10 @@
+body{
+    line-height: 2rem;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.row{
+    border: 1px solid;
+    border-radius: 10px;
+}

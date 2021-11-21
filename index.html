@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Site</title>
+    <title>Git Cheat Sheet</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -13,10 +13,244 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello world</h1>
+    <div class="container justify-content-start !direction !spacing">
+
+        <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+            <h1>Git cheat sheet for all</h1>
+            <hr>
+            <div class="col-sm-12">
+                <h2>Configer the git by using User name:</h2>
+                <ul>
+                    <li>
+                        git config --global user.name `User Name`
+                    </li>
+                    <li>
+                        git config --global user.email `User Email`
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Check config is completed or not using:</h2>
+                <ul>
+                    <li>
+                        git config --global user.name
+                    </li>
+                    <li>
+                        git config --global user.email
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Initialize the git:</h2>
+                <ul>
+                    <li>
+                        git init
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Check the status:</h2>
+                <ul>
+                    <li>
+                        git status
+                    </li>
+                    <li>
+                        git status -s (give short status)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Add the files in staging area:</h2>
+                <ul>
+                    <li>
+                        git add `file-name` (for single file to add in stage)
+                    </li>
+                    <li>
+                        git add -A (Add only newly added files to stage area)
+                    </li>
+                    <li>
+                        git add . (for all file\'s to add in stage)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Commit the changes:</h2>
+                <ul>
+                    <li>
+                        git commit
+                    </li>
+                    <li>
+                        git commit -m "message"
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Create the files:</h2>
+                <ul>
+                    <li>
+                        touch `fileName with extensions`
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Checkout the old commits:</h2>
+                <ul>
+                    <li>
+                        git checkout `fileName` (recover the single file)
+                    </li>
+                    <li>
+                        git checkout -f (recover the all the file)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Check the logs:</h2>
+                <ul>
+                    <li>
+                        git log
+                    </li>
+                    <li>
+                        git log -p -`number of changes` (i.e git log -p 1)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Compare the working tree:</h2>
+                <ul>
+                    <li>
+                        git diff (working tree with staging area)
+                    </li>
+                    <li>
+                        git diff --staged (staged tree with last commit)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Skip stage and add commit code directly :</h2>
+                <ul>
+                    <li>
+                        git commit -a -m "Message"
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Remove the files:</h2>
+                <ul>
+                    <li>
+                        git rm `file_name` (remove the file from stage as well as directory)
+                    </li>
+                    <li>
+                        git rm --cached `file_name` (remove the file from stage only)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Add git ignore file and add file/folder name which we have to ignore.</h2>
+                <ul>
+                    <li>
+                        touch .gitignore
+                    </li>
+                </ul>
+                <p>
+                    format to add file name in gitignore
+                <ul>
+                    <li>
+                        myLogs.log --> this get ignore from entire project
+                    </li>
+                    <li>
+                        /myLogs.log --> get ignored from directory where .gitignore file is present
+                    </li>
+                    <li>
+                        *.log --> ignore all file has extension log
+                    </li>
+                    <li>
+                        folderName/ --> ignore this folder.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <h2>Show branches:</h2>
+                <ul>
+                    <li>
+                        git branch
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Create new branch:</h2>
+                <ul>
+                    <li>
+                        git branch `branch_name`
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Point to new branch:</h2>
+                <ul>
+                    <li>
+                        git checkout `branch_name`
+                    </li>
+                    <li>
+                        git checkout -b `branch_name` (create and switch to new branch)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Merge the new branch in master:</h2>
+                <ul>
+                    <li>
+                        git merge `branch_name`
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <h1>Working with remote repositories:</h1>
+            <hr>
+            <div class="col-sm-12">
+                <h2>Add remote rempository:</h2>
+                <ul>
+                    <li>
+                        git remote add origin https://github.com/{UserName}/{RepositoryName}.git
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Check the remote details:</h2>
+                <ul>
+                    <li>
+                        git remote
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Push the branch to remote branch:</h2>
+                <ul>
+                    <li>
+                        git push origin {branchName}
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        git push -u origin {branchName} (for sure push)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h2>Clone the repository:</h2>
+                <ul>
+                    <li>
+                        git clone {repo Url}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
